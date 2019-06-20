@@ -105,7 +105,7 @@ public class XDDeviceControl : MonoBehaviour
     static public void SendMotionControl(float time, float Pitch, float Roll, float Yaw, float Surge, float Sway, float Heave, float ShakeType, float Cycle, float Amplitude, float Speed)
     {
         if (m_startGame)
-            MotionControl(time, Pitch, Roll, Yaw, Surge, Sway, Heave, ShakeType, Cycle, Amplitude, Speed);
+            MotionControl(time, -Pitch, Roll, Yaw, Surge, Sway, Heave, ShakeType, Cycle, Amplitude, Speed);
     }
     static public void SendEffectControl(int EffectType, int Status)
     {        
